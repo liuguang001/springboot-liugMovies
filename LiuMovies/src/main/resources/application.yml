@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.40.100:3306/liu_movies?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    password: root
+    username: root
+  redis:
+    host: 192.168.40.100
+    port: 6379
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
